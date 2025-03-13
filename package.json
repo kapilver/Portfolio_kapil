@@ -1,0 +1,12 @@
+{
+  "name": "clyde-master",
+  "version": "1.0.0",
+  "description": "Thank you for using our template!",
+  "main": "app.js",
+  "scripts": {
+    "start":"nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

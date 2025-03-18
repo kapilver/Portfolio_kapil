@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>Er. kapil verma Portfolio</title>
+	<title>Er.kapil verma Portfolio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
+
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<link rel="stylesheet" href="css/animate.css">
-	
+
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
-	
+
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+
 </head>
+
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	
-	
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
+		id="ftco-navbar">
 		<div class="container">
-			<a class="navbar-brand" href="index.html">Kapil Verma<span>...</span></a>
-			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+			<a class="navbar-brand" href="index.html">ER.Kapil Verma<span></span></a>
+
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="oi oi-menu"></span> Menu
 			</button>
 
@@ -41,41 +51,96 @@
 			</div>
 		</div>
 	</nav>
+
+
+
 	<section id="home-section" class="hero">
 		<div class="home-slider owl-carousel">
 			<div class="slider-item">
 				<div class="overlay"></div>
 				<div class="container-fluid px-md-0">
-					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-						<div class="one-third order-md-last img" style="background-image:url(images/itzmauuuroo-hackers-anonymous-hd-wallpaper-preview.jpg);">
-							
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="true">
+						<div class="one-third order-md-last img"
+							style="background-image:url(images/itzmauuuroo-hackers-anonymous-hd-wallpaper-preview.jpg);">
+
 							<div class="overlay"></div>
 							<div class="overlay-1"></div>
 						</div>
-						<div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+						<div class="one-forth d-flex  align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+
+
 							<div class="text">
-								<span class="subheading">Hello! This is Clyde</span>
+
+								<script>
+
+									document.getElementById("hireMeBtn").addEventListener("click", function (event) {
+										event.preventDefault(); // Prevent default link behavior
+
+										Swal.fire({
+											title: "Thank You for Your Interest! 😊",
+											html: `
+            I'm excited to collaborate with you! 🚀 <br><br>
+            📧 Email: <strong>kapilvermajaika@gmail.com</strong> <br>
+            
+             Follow me on <a href="https://www.instagram.com/babaaa_kapil/" target="_blank" style="color:#E4405F; font-weight: bold;">Instagram</a>`,
+											icon: "success",
+											confirmButtonText: "Go to Contact Page",
+											backdrop: `
+            rgba(0,0,123,0.4)
+            // url("https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif")
+            center top
+            no-repeat
+        `
+
+
+										}).then((result) => {
+											if (result.isConfirmed) {
+												window.location.href = "#"; // Redirect on button click
+											}
+										});
+									});
+
+								</script>
+
+								<span class="subheading">Hello! This is Kapil</span>
 								<h1 class="mb-4 mt-3">Creative <span>MERN</span> Stack &amp; Developer</h1>
-								<p><a href="#" class="btn btn-primary">Hire me</a> <a href="#" class="btn btn-primary btn-outline-primary">Download CV</a></p>
+
+
+								<p>
+									<a href="#" id="hireMeBtn" class="btn btn-primary">Hire me</a>
+									<a href="your-cv-link.pdf" class="btn btn-primary btn-outline-primary"
+										download>Download CV</a>
+								</p>
+
+								<!-- <a href="#" id="hireMeBtn" class="btn btn-primary">Hire me</a> <a href="./Pages//Kapil_Verma_NodeJS_Developer (1).pdf" class="btn btn-primary btn-outline-primary">Download CV</a></p> -->
 							</div>
+
 						</div>
 					</div>
 				</div>
 			</div>
 
+
+
 			<div class="slider-item">
 				<div class="overlay"></div>
 				<div class="container-fluid px-md-0">
-					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-						<div class="one-third order-md-last img" style="background-image:url(images/red-kali-linux-km80yx5gdcwcaatf.jpg);">
+					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="true">
+						<div class="one-third order-md-last img"
+							style="background-image:url(images/red-kali-linux-km80yx5gdcwcaatf.jpg);">
 							<div class="overlay"></div>
 							<div class="overlay-1"></div>
 						</div>
-						<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+						<div class="one-forth d-flex align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
 							<div class="text">
 								<span class="subheading">We Design &amp; Build Brands</span>
 								<h1 class="mb-4 mt-3">Hi, I am <span>Kapil</span> This is my favorite work.</h1>
-								<p><a href="#" class="btn btn-primary">Hire me</a> <a href="#" class="btn btn-primary btn-outline-primary">Download CV</a></p>
+								<p><a href="#" class="btn btn-primary">Hire me</a> <a href="#"
+										class="btn btn-primary btn-outline-primary">Download CV</a></p>
 							</div>
 						</div>
 					</div>
@@ -141,7 +206,8 @@
 				<div class="col-md-6 col-lg-5 d-flex">
 					<div class="img-about img d-flex align-items-stretch">
 						<div class="overlay"></div>
-						<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/kapil.png);">
+						<div class="img d-flex align-self-stretch align-items-center"
+							style="background-image:url(images/kapil.png);">
 						</div>
 					</div>
 				</div>
@@ -150,14 +216,22 @@
 						<div class="row justify-content-start pb-3">
 							<div class="col-md-12 heading-section ftco-animate">
 								<span class="subheading">My Intro</span>
+
 								<h2 class="mb-4" style="font-size: 34px; text-transform: capitalize;">About Me</h2>
-								<p>I am a passionate Full Stack Software Developer with 3 years of experience in building scalable and efficient web applications. I specialize in React.js, Node.js, MongoDB, and Material UI, crafting seamless user experiences and robust backend systems. My expertise includes designing dynamic UIs, optimizing database performance, and implementing secure authentication mechanisms. Always eager to learn and adapt, I enjoy solving complex problems and bringing innovative ideas to life through technology.</p>
+								<p>I am a passionate Full Stack Software Developer with 3 years of experience in
+									building scalable and efficient web applications. I specialize in React.js, Node.js,
+									MongoDB, and Material UI, crafting seamless user experiences and robust backend
+									systems. My expertise includes designing dynamic UIs, optimizing database
+									performance, and implementing secure authentication mechanisms. Always eager to
+									learn and adapt, I enjoy solving complex problems and bringing innovative ideas to
+									life through technology.</p>
 
 								<ul class="about-info mt-4 px-md-0 px-2">
 									<li class="d-flex"><span>Name:</span> <span>Kapil verma</span></li>
 									<li class="d-flex"><span>Date of birth:</span> <span>March 01, 1996</span></li>
-									<li class="d-flex"><span>Address:</span> <span>61 A -Dwarkapuri , Indore</span></li>
-									<li class="d-flex"><span>Zip code:</span> <span>1000</span></li>
+									<li class="d-flex"><span>Address:</span> <span>1087 - Silver star
+											city , Indore(M.P)</span></li>
+									<li class="d-flex"><span>Pin code:</span> <span>452013</span></li>
 									<li class="d-flex"><span>Email:</span> <span>Kapilvermajaika@gmail.com</span></li>
 									<li class="d-flex"><span>Phone: </span> <span>9009798887</span></li>
 								</ul>
@@ -186,8 +260,10 @@
 										<div class="icon d-flex align-items-center justify-content-center">
 											<span class="flaticon-football"></span>
 										</div>
+
 										<div class="text">Sports</div>
 									</div>
+
 								</div>
 							</div>
 						</div>
@@ -196,7 +272,7 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<section class="ftco-section bg-light" id="skills-section">
 		<div class="container">
 			<div class="row justify-content-center pb-5">
@@ -209,7 +285,7 @@
 			<div class="row progress-circle mb-5">
 				<div class="col-lg-4 mb-4">
 					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">Bootstrap</h2>
+						<h2 class="h5 font-weight-bold text-center mb-4">HTML & CSS</h2>
 
 						<!-- Progress bar 1 -->
 						<div class="progress mx-auto" data-value='95'>
@@ -219,7 +295,8 @@
 							<span class="progress-right">
 								<span class="progress-bar border-primary"></span>
 							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+							<div
+								class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
 								<div class="h2 font-weight-bold">95<sup class="small">%</sup></div>
 							</div>
 						</div>
@@ -228,10 +305,12 @@
 						<!-- Demo info -->
 						<div class="row text-center mt-4">
 							<div class="col-6 border-right">
-								<div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
+								<div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last
+									week</span>
 							</div>
 							<div class="col-6">
-								<div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
+								<div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last
+									month</span>
 							</div>
 						</div>
 						<!-- END -->
@@ -240,7 +319,7 @@
 
 				<div class="col-lg-4 mb-4">
 					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">PHP</h2>
+						<h2 class="h5 font-weight-bold text-center mb-4">MERN Stack</h2>
 
 						<!-- Progress bar 1 -->
 						<div class="progress mx-auto" data-value='98'>
@@ -250,8 +329,9 @@
 							<span class="progress-right">
 								<span class="progress-bar border-primary"></span>
 							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">98<sup class="small">%</sup></div>
+							<div
+								class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+								<div class="h2 font-weight-bold">92<sup class="small">%</sup></div>
 							</div>
 						</div>
 						<!-- END -->
@@ -259,10 +339,12 @@
 						<!-- Demo info -->
 						<div class="row text-center mt-4">
 							<div class="col-6 border-right">
-								<div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
+								<div class="h4 font-weight-bold mb-0">44%</div><span class="small text-gray">Last
+									week</span>
 							</div>
 							<div class="col-6">
-								<div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
+								<div class="h4 font-weight-bold mb-0">50%</div><span class="small text-gray">Last
+									month</span>
 							</div>
 						</div>
 						<!-- END -->
@@ -271,7 +353,7 @@
 
 				<div class="col-lg-4 mb-4">
 					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">jQuery</h2>
+						<h2 class="h5 font-weight-bold text-center mb-4">SQL/NoSQL  </h2>
 
 						<!-- Progress bar 1 -->
 						<div class="progress mx-auto" data-value='68'>
@@ -281,8 +363,9 @@
 							<span class="progress-right">
 								<span class="progress-bar border-primary"></span>
 							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-								<div class="h2 font-weight-bold">68<sup class="small">%</sup></div>
+							<div
+								class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+								<div class="h2 font-weight-bold">90<sup class="small">%</sup></div>
 							</div>
 						</div>
 						<!-- END -->
@@ -290,10 +373,12 @@
 						<!-- Demo info -->
 						<div class="row text-center mt-4">
 							<div class="col-6 border-right">
-								<div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
+								<div class="h4 font-weight-bold mb-0">48%</div><span class="small text-gray">Last
+									week</span>
 							</div>
 							<div class="col-6">
-								<div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
+								<div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last
+									month</span>
 							</div>
 						</div>
 						<!-- END -->
@@ -312,7 +397,8 @@
 							<span class="progress-right">
 								<span class="progress-bar border-primary"></span>
 							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+							<div
+								class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
 								<div class="h2 font-weight-bold">92<sup class="small">%</sup></div>
 							</div>
 						</div>
@@ -321,10 +407,12 @@
 						<!-- Demo info -->
 						<div class="row text-center mt-4">
 							<div class="col-6 border-right">
-								<div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
+								<div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last
+									week</span>
 							</div>
 							<div class="col-6">
-								<div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
+								<div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last
+									month</span>
 							</div>
 						</div>
 						<!-- END -->
@@ -333,7 +421,7 @@
 
 				<div class="col-lg-4 mb-4">
 					<div class="bg-white rounded-lg shadow p-4">
-						<h2 class="h5 font-weight-bold text-center mb-4">WordPress</h2>
+						<h2 class="h5 font-weight-bold text-center mb-4">JavaScript</h2>
 
 						<!-- Progress bar 1 -->
 						<div class="progress mx-auto" data-value='83'>
@@ -343,7 +431,8 @@
 							<span class="progress-right">
 								<span class="progress-bar border-primary"></span>
 							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+							<div
+								class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
 								<div class="h2 font-weight-bold">83<sup class="small">%</sup></div>
 							</div>
 						</div>
@@ -352,10 +441,12 @@
 						<!-- Demo info -->
 						<div class="row text-center mt-4">
 							<div class="col-6 border-right">
-								<div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
+								<div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last
+									week</span>
 							</div>
 							<div class="col-6">
-								<div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
+								<div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last
+									month</span>
 							</div>
 						</div>
 						<!-- END -->
@@ -374,7 +465,8 @@
 							<span class="progress-right">
 								<span class="progress-bar border-primary"></span>
 							</span>
-							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+							<div
+								class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
 								<div class="h2 font-weight-bold">95<sup class="small">%</sup></div>
 							</div>
 						</div>
@@ -383,10 +475,12 @@
 						<!-- Demo info -->
 						<div class="row text-center mt-4">
 							<div class="col-6 border-right">
-								<div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
+								<div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last
+									week</span>
 							</div>
 							<div class="col-6">
-								<div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
+								<div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last
+									month</span>
 							</div>
 						</div>
 						<!-- END -->
@@ -409,79 +503,92 @@
 			<div class="row">
 				<div class="col-md-6 col-lg-3">
 					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-3d-design"></span></div>
+						<div class="icon d-flex align-items-center justify-content-center"><span
+								class="flaticon-3d-design"></span></div>
 						<div class="media-body">
-							<h3 class="heading mb-3">Web Design</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
+							<h3 class="heading mb-3"> Software Development</h3>
+							<p> applications designed for your business success..</p>
 						</div>
-					</div> 
+					</div>
 				</div>
 				<div class="col-md-6 col-lg-3">
 					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-app-development"></span></div>
+						<div class="icon shadow d-flex align-items-center justify-content-center"><span
+								class="flaticon-app-development"></span></div>
 						<div class="media-body">
-							<h3 class="heading mb-3">Web Application</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
+							<h3 class="heading mb-3">Web & Mobile App Development</h3>
+							<p>Engaging, responsive, and feature-rich applications...</p>
 						</div>
-					</div> 
+					</div>
 				</div>
 				<div class="col-md-6 col-lg-3">
 					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-web-programming"></span></div>
+						<div class="icon shadow d-flex align-items-center justify-content-center"><span
+								class="flaticon-web-programming"></span></div>
 						<div class="media-body">
-							<h3 class="heading mb-3">Web Development</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
+							<h3 class="heading mb-3">Cloud & DevOps </h3>
+							<p>Secure, scalable cloud deployment with AWS, Azure, and Google Cloud..</p>
 						</div>
-					</div> 
+					</div>
 				</div>
 				<div class="col-md-6 col-lg-3">
 					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-branding"></span></div>
+						<div class="icon shadow d-flex align-items-center justify-content-center"><span
+								class="flaticon-branding"></span></div>
 						<div class="media-body">
-							<h3 class="heading mb-3">Banner Design</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
+							<h3 class="heading mb-3">Full-Stack Development</h3>
+							<p>Expertise in React, Next.js, Node.js, Python, and more..</p>
 						</div>
-					</div> 
+					</div>
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="col-md-6 col-lg-3">
 					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-computer"></span></div>
+						<div class="icon shadow d-flex align-items-center justify-content-center"><span
+								class="flaticon-computer"></span></div>
 						<div class="media-body">
-							<h3 class="heading mb-3">Branding</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
+							<h3 class="heading mb-3"> E-commerce Solutions</h3>
+							<p> scalable platforms with seamless payment integration...</p>
 						</div>
-					</div> 
+					</div>
 				</div>
 				<div class="col-md-6 col-lg-3">
 					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-vector"></span></div>
+						<div class="icon shadow d-flex align-items-center justify-content-center"><span
+								class="flaticon-vector"></span></div>
 						<div class="media-body">
-							<h3 class="heading mb-3">Icon Design</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
+							<h3 class="heading mb-3">Technology Selection</h3>
+							<p>Choosing the right programming languages, frameworks, and databases.</p>
 						</div>
-					</div> 
+					</div>
 				</div>
 				<div class="col-md-6 col-lg-3">
 					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-vector"></span></div>
+						<div class="icon shadow d-flex align-items-center justify-content-center"><span
+								class="flaticon-vector"></span></div>
 						<div class="media-body">
-							<h3 class="heading mb-3">Graphic Design</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
+							<h3 class="heading mb-3">Planning & Design</h3>
+							<p>Creating system architecture, wireframes, and UI/UX design..</p>
 						</div>
-					</div> 
+					</div>
 				</div>
+
+
 				<div class="col-md-6 col-lg-3">
 					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-						<div class="icon shadow d-flex align-items-center justify-content-center"><span class="flaticon-zoom"></span></div>
+						<div class="icon shadow d-flex align-items-center justify-content-center"><span
+								class="flaticon-zoom"></span></div>
 						<div class="media-body">
-							<h3 class="heading mb-3">SEO</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
+							<h3 class="heading mb-3">Security & Performance</h3>
+							<p> Implementing security measures and optimizing for speed..</p>
 						</div>
-					</div> 
+					</div>
 				</div>
+
+
+
 			</div>
 		</div>
 	</section>
@@ -492,7 +599,8 @@
 				<div class="col-md-8 col-lg-8 d-flex align-items-center">
 					<div class="w-100 py-4">
 						<h2>Have a project on your mind.</h2>
-						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly.</p>
+						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
+							It is a paradisematic country, in which roasted parts of sentences fly.</p>
 						<p class="mb-0"><a href="#" class="btn btn-white py-3 px-4">Contact me</a></p>
 					</div>
 				</div>
@@ -509,79 +617,87 @@
 				<div class="col-md-12 heading-section text-center ftco-animate">
 					<span class="subheading">Accomplishments</span>
 					<h2 class="mb-4">Our Projects</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+					<p>we share the latest trends, best practices, and innovations in software development, web technologies, and mobile applications. Stay updated with industry insights, expert tips, and development strategies!</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-3">
-					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-1.jpg);">
+					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/work-1.jpg);">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
+							<h3><a href="#">Web & Full-Stack   &amp; Development</a></h3>
+							<span>E-Commerce Platform</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/work-2.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="#">Mobile App  &amp; Development</a></h3>
+							<span>Food Delivery App</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/work-3.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="#">Customizable &  &amp; User-Friendly</a></h3>
 							<span>Web Design</span>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3">
-					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-2.jpg);">
+					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/work-4.jpg);">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
 							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
+							<span>unique business needs.</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/work-5.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="#">Fitness Tracking  &amp; App</a></h3>
 							<span>Web Design</span>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3">
-					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-3.jpg);">
+					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/work-6.jpg);">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
+							<h3><a href="#">Scalable & Secure  &amp; Solutions</a></h3>
 							<span>Web Design</span>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3">
-					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-4.jpg);">
+					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/work-7.jpg);">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
+							<h3><a href="#">Security & Performance  &amp; Focused</a></h3>
+							<span>speed optimization.</span>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3">
-					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-5.jpg);">
+					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/work-8.jpg);">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-6.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-7.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-8.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
+							<h3><a href="#">Event Management  &amp; System</a></h3>
+							<span>management</span>
 						</div>
 					</div>
 				</div>
@@ -605,7 +721,8 @@
 							<div class="testimony-wrap py-4">
 								<div class="text">
 									<span class="fa fa-quote-left"></span>
-									<p class="mb-4 pl-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+									<p class="mb-4 pl-5">Far far away, behind the word mountains, far from the countries
+										Vokalia and Consonantia, there live the blind texts.</p>
 									<div class="d-flex align-items-center">
 										<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
 										<div class="pl-3">
@@ -620,7 +737,8 @@
 							<div class="testimony-wrap py-4">
 								<div class="text">
 									<span class="fa fa-quote-left"></span>
-									<p class="mb-4 pl-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+									<p class="mb-4 pl-5">Far far away, behind the word mountains, far from the countries
+										Vokalia and Consonantia, there live the blind texts.</p>
 									<div class="d-flex align-items-center">
 										<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
 										<div class="pl-3">
@@ -635,7 +753,8 @@
 							<div class="testimony-wrap py-4">
 								<div class="text">
 									<span class="fa fa-quote-left"></span>
-									<p class="mb-4 pl-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+									<p class="mb-4 pl-5">Far far away, behind the word mountains, far from the countries
+										Vokalia and Consonantia, there live the blind texts.</p>
 									<div class="d-flex align-items-center">
 										<div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
 										<div class="pl-3">
@@ -650,7 +769,8 @@
 							<div class="testimony-wrap py-4">
 								<div class="text">
 									<span class="fa fa-quote-left"></span>
-									<p class="mb-4 pl-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+									<p class="mb-4 pl-5">Far far away, behind the word mountains, far from the countries
+										Vokalia and Consonantia, there live the blind texts.</p>
 									<div class="d-flex align-items-center">
 										<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
 										<div class="pl-3">
@@ -665,7 +785,8 @@
 							<div class="testimony-wrap py-4">
 								<div class="text">
 									<span class="fa fa-quote-left"></span>
-									<p class="mb-4 pl-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+									<p class="mb-4 pl-5">Far far away, behind the word mountains, far from the countries
+										Vokalia and Consonantia, there live the blind texts.</p>
 									<div class="d-flex align-items-center">
 										<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
 										<div class="pl-3">
@@ -689,7 +810,7 @@
 				<div class="col-md-7 heading-section text-center ftco-animate">
 					<span class="subheading">Blog</span>
 					<h2 class="mb-4">Our Blog</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+					<p>we share the latest trends, best practices, and innovations in software development, web technologies, and mobile applications. Stay updated with industry insights, expert tips, and development strategies!</p>
 				</div>
 			</div>
 			<div class="row d-flex">
@@ -701,12 +822,13 @@
 							<div class="d-flex align-items-center mb-3 meta">
 								<p class="mb-0">
 									<span class="mr-2">July 03, 2020</span>
-									<a href="#" class="mr-2">Admin</a>
+									<a href="#" class="mr-2">Admin 1</a>
 									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
 								</p>
 							</div>
-							<h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
-							<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+							<h3 class="heading"><a href="single.html">Why Next.js is the Best Choice for Modern Web Apps</a>
+							</h3>
+							<p> Server-side rendering (SSR) vs. static generation (SSG).</p>
 						</div>
 					</div>
 				</div>
@@ -718,12 +840,13 @@
 							<div class="d-flex align-items-center mb-3 meta">
 								<p class="mb-0">
 									<span class="mr-2">July 03, 2020</span>
-									<a href="#" class="mr-2">Admin</a>
-									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+									<a href="#" class="mr-2">Admin </a>
+									<a href="#" class="meta-chat"><span class="icon-chat"></span> 2</a>
 								</p>
 							</div>
-							<h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
-							<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+							<h3 class="heading"><a href="single.html">Mastering API Development with Node.js & Express</a>
+							</h3>
+							<p> Authentication & security best practices.</p>
 						</div>
 					</div>
 				</div>
@@ -734,13 +857,14 @@
 						<div class="text mt-3 float-right d-block">
 							<div class="d-flex align-items-center mb-3 meta">
 								<p class="mb-0">
-									<span class="mr-2">July 03, 2020</span>
-									<a href="#" class="mr-2">Admin</a>
+									<span class="mr-2">march 03, 2021</span>
+									<a href="#" class="mr-2">Admin  </a>
 									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
 								</p>
 							</div>
-							<h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
-							<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+							<h3 class="heading"><a href="single.html">Understanding UPI Payment Integration in E-Commerce</a>
+							</h3>
+							<p>Step-by-step guide to integrating UPI with Node.js.</p>
 						</div>
 					</div>
 				</div>
@@ -779,7 +903,8 @@
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+									<textarea name="" id="" cols="30" rows="7" class="form-control"
+										placeholder="Message"></textarea>
 								</div>
 							</div>
 							<div class="col-md-12">
@@ -789,7 +914,7 @@
 							</div>
 						</div>
 					</form>
-					
+
 				</div>
 
 				<div class="col-md-4 d-flex pl-md-5">
@@ -815,7 +940,8 @@
 								<span class="fa fa-paper-plane"></span>
 							</div>
 							<div class="text">
-								<p><span>Email:</span> <a href="mailto:info@yoursite.com">kapilvermajaika@gmail.com</a></p>
+								<p><span>Email:</span> <a href="mailto:info@yoursite.com">kapilvermajaika@gmail.com</a>
+								</p>
 							</div>
 						</div>
 						<div class="dbox w-100 d-flex">
@@ -832,7 +958,7 @@
 			</div>
 		</div>
 	</section>
-	
+
 
 	<footer class="ftco-footer ftco-section">
 		<div class="container">
@@ -840,7 +966,8 @@
 				<div class="col-md">
 					<div class="ftco-footer-widget mb-4">
 						<h2 class="ftco-heading-2">Lets talk about</h2>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+							there live the blind texts.</p>
 						<p><a href="#" class="btn btn-primary">Learn more</a></p>
 					</div>
 				</div>
@@ -851,7 +978,8 @@
 							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Home</a></li>
 							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About</a></li>
 							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Services</a></li>
-							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Projects</a></li>
+							<li><a href="#"><span class1087 - Silver star city ,
+										Indore(M.P)="fa fa-chevron-right mr-2"></span>Projects</a></li>
 							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
 						</ul>
 					</div>
@@ -873,15 +1001,21 @@
 						<h2 class="ftco-heading-2">Have a Questions?</h2>
 						<div class="block-23 mb-3">
 							<ul>
-								<li><span class="icon fa fa-map marker"></span><span class="text">1068 - Silver star city , Indore(M.P)</span></li>
-								<li><a href="#"><span class="icon fa fa-phone"></span><span class="text">9009798887</span></a></li>
-								<li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">kapilvermajika@gmail.com</span></a></li>
+								<li><span class="icon fa fa-map marker"></span><span class="text">1087 - Silver star
+										city , Indore(M.P)</span></li>
+								<li><a href="#"><span class="icon fa fa-phone"></span><span
+											class="text">9009798887</span></a></li>
+								<li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span
+											class="text">kapilvermajika@gmail.com</span></a></li>
 							</ul>
 						</div>
 						<ul class="ftco-footer-social list-unstyled mt-2">
-							<li class="ftco-animate"><a href="https://www.linkedin.com/in/kapil-verma-95941a18b/"><span class="fa fa-linkedin"></span></a></li>
-							<li class="ftco-animate"><a href="https://www.facebook.com/kapil.verma.1848"><span class="fa fa-facebook"></span></a></li>
-							<li class="ftco-animate"><a href="https://www.instagram.com/babaaa_kapil/"><span class="fa fa-instagram"></span></a></li>
+							<li class="ftco-animate"><a href="https://www.linkedin.com/in/kapil-verma-95941a18b/"><span
+										class="fa fa-linkedin"></span></a></li>
+							<li class="ftco-animate"><a href="https://www.facebook.com/kapil.verma.1848"><span
+										class="fa fa-facebook"></span></a></li>
+							<li class="ftco-animate"><a href="https://www.instagram.com/babaaa_kapil/"><span
+										class="fa fa-instagram"></span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -889,33 +1023,39 @@
 			<div class="row">
 				<div class="col-md-12 text-center">
 
-				
-					</div>
+
 				</div>
 			</div>
-		</footer>
-		
-		
-
-		<!-- loader -->
-		<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+		</div>
+	</footer>
 
 
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery-migrate-3.0.1.min.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.easing.1.3.js"></script>
-		<script src="js/jquery.waypoints.min.js"></script>
-		<script src="js/jquery.stellar.min.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script src="js/jquery.animateNumber.min.js"></script>
-		<script src="js/scrollax.min.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-		<script src="js/google-map.js"></script>
-		
-		<script src="js/main.js"></script>
-		
-	</body>
-	</html>
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+	<script src="js/google-map.js"></script>
+
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
